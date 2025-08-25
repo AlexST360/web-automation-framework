@@ -1,6 +1,6 @@
 # Web Automation Framework - Prueba Técnica
 
-Este proyecto es un **framework de automatización web** desarrollado como parte de una prueba técnica, utilizando **Selenium WebDriver, Java, TestNG, Maven y WebDriverManager**. Está diseñado para demostrar habilidades en **automatización de pruebas de aplicaciones web, integración de pruebas en pipelines CI/CD y buenas prácticas de desarrollo**.
+Este proyecto es un **framework de automatización web**, utilizando **Selenium WebDriver, Java, TestNG, Maven y WebDriverManager**. Está diseñado para demostrar habilidades en **automatización de pruebas de aplicaciones web, integración de pruebas en pipelines CI/CD y buenas prácticas de desarrollo**.
 
 ## Tecnologías y herramientas usadas
 
