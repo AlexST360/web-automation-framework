@@ -1,0 +1,31 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# --- Entornos virtuales ---
+.venv/
+env/
+venv/
+
+# --- Configuración local ---
+*.env
+config.ini
+*.log
+
+# --- Archivos del sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Selenium / Navegadores ---
+# Carpeta de descargas generada por Selenium
+downloads/
+*.crdownload
+*.part
+
+# --- Archivos temporales ---
+*.tmp
+*.bak
+*.swp
