@@ -1,3 +1,6 @@
+api\tests\UserApiTest.class
+api\tests\BaseApiTest.class
 com\qa\automation\tests\GoogleSearchTest.class
 com\qa\automation\core\DriverFactory.class
 com\qa\automation\pages\GoogleHomePage.class
+api\pages\UserApi.class
