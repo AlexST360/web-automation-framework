@@ -1,6 +1,6 @@
 # Web Automation Framework - Prueba Técnica
 
-Este proyecto es un **framework de automatización web**, utilizando **Selenium WebDriver, Java, TestNG, Maven y WebDriverManager**. Está diseñado para demostrar habilidades en **automatización de pruebas de aplicaciones web, integración de pruebas en pipelines CI/CD y buenas prácticas de desarrollo**.
+Este proyecto es un **framework de automatización web** desarrollado como parte de una prueba técnica, utilizando **Selenium WebDriver, Java 11, TestNG, Maven y WebDriverManager**. Está diseñado para demostrar habilidades en **automatización de pruebas de aplicaciones web, integración en pipelines CI/CD y buenas prácticas de desarrollo**.
 
 ## Tecnologías y herramientas usadas
 
@@ -9,42 +9,65 @@ Este proyecto es un **framework de automatización web**, utilizando **Selenium 
 - **TestNG 7.8.0**: framework de pruebas.
 - **Maven 3.9.11**: gestión de dependencias y build.
 - **WebDriverManager 5.5.3**: manejo automático de drivers.
+- **SLF4J**: logging profesional en tests.
 - **Postman**: para pruebas de API externas.
-- **SQL**: para validación y consultas de datos.
+- **SQL**: ejemplo de validación y consultas de datos.
 
 ## Estructura del proyecto
 
 qa-automation-starter/
 │
 ├─ src/main/java/com/alex/core/ # Clases principales de soporte
-│ └─ DriverFactory.java # Inicializa WebDriver
+│ └─ DriverFactory.java # Inicializa WebDriver y gestiona drivers
+│
+├─ src/main/java/com/alex/pages/ # Clases de Page Object Model (POM)
+│ └─ GoogleHomePage.java # Ejemplo de POM para la página de Google
 │
 ├─ src/test/java/com/alex/tests/ # Tests automatizados
-│ └─ GoogleTitleTest.java # Ejemplo de prueba Selenium
+│ ├─ GoogleTitleTest.java # Test básico de título de Google
+│ └─ GoogleSearchTest.java # Test usando POM y logging
 │
 ├─ pom.xml # Dependencias y configuración Maven
-└─ README.md # Este archivo
+├─ README.md # Este archivo
+└─ .gitignore # Archivos y carpetas a ignorar
+
+bash
+Copiar
+Editar
 
 ## Cómo ejecutar las pruebas
 
-1. Clonar el repositorio:
+1. **Clonar el repositorio**
 ```bash
 git clone https://github.com/tuusuario/web-automation-framework.git
+cd qa-automation-starter
+Ejecutar pruebas con Maven
 
-## Entrar al directorio del proyecto
-## cd qa-automation-starter
+bash
+Copiar
+Editar
+mvn clean test
+Ejecutar un test específico
 
+bash
+Copiar
+Editar
+mvn -Dtest=GoogleTitleTest test
+Generar reportes
 
-## Ejecutar pruebas con Maven
-## mvn clean test
+TestNG genera reportes en target/surefire-reports/.
+
+Los logs detallados se encuentran en la consola gracias a SLF4J.
 
 Buenas prácticas incluidas
-Uso de Page Object Pattern y clases de soporte.
-Gestión de dependencias con Maven.
-Manejo de versiones de Java y drivers compatible.
-TestNG para reportes claros de pruebas.
+Implementación de Page Object Pattern para separar lógica de interacción de la UI.
 
+Uso de clases de soporte (DriverFactory) para inicializar y cerrar WebDriver correctamente.
 
-Notas
-Este proyecto se puede expandir para incluir pruebas de APIs REST/SOAP y validaciones SQL.
-Todos los tests están pensados para ser ejecutados en pipelines CI/CD sin intervención manual.
+Gestión de dependencias y versiones con Maven.
+
+Logging profesional con SLF4J.
+
+Tests configurados para ejecutarse en pipelines CI/CD sin intervención manual.
+
+Código preparado para expansión a pruebas de APIs REST/SOAP y validaciones SQL/MongoDB.
