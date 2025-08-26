@@ -1,6 +1,6 @@
 # Web Automation Framework - Prueba Técnica
 
-Este proyecto es un **framework de automatización web** desarrollado como parte de una prueba técnica, utilizando **Selenium WebDriver, Java 11, TestNG, Maven y WebDriverManager**. Está diseñado para demostrar habilidades en **automatización de pruebas de aplicaciones web, integración en pipelines CI/CD y buenas prácticas de desarrollo**.
+Este proyecto es un **framework de automatización web**, utilizando **Selenium WebDriver, Java 11, TestNG, Maven y WebDriverManager**. **automatización de pruebas de aplicaciones web, integración en pipelines CI/CD y buenas prácticas de desarrollo**.
 
 ## Tecnologías y herramientas usadas
 
@@ -31,10 +31,6 @@ qa-automation-starter/
 ├─ README.md # Este archivo
 └─ .gitignore # Archivos y carpetas a ignorar
 
-bash
-Copiar
-Editar
-
 ## Cómo ejecutar las pruebas
 
 1. **Clonar el repositorio**
@@ -43,31 +39,18 @@ git clone https://github.com/tuusuario/web-automation-framework.git
 cd qa-automation-starter
 Ejecutar pruebas con Maven
 
-bash
-Copiar
-Editar
 mvn clean test
 Ejecutar un test específico
 
-bash
-Copiar
-Editar
 mvn -Dtest=GoogleTitleTest test
-Generar reportes
 
 TestNG genera reportes en target/surefire-reports/.
 
 Los logs detallados se encuentran en la consola gracias a SLF4J.
-
 Buenas prácticas incluidas
 Implementación de Page Object Pattern para separar lógica de interacción de la UI.
-
 Uso de clases de soporte (DriverFactory) para inicializar y cerrar WebDriver correctamente.
-
 Gestión de dependencias y versiones con Maven.
-
 Logging profesional con SLF4J.
-
 Tests configurados para ejecutarse en pipelines CI/CD sin intervención manual.
-
 Código preparado para expansión a pruebas de APIs REST/SOAP y validaciones SQL/MongoDB.
