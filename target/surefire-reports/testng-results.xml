@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-25T22:22:45 CLT" name="Surefire suite" finished-at="2025-08-25T22:22:54 CLT" duration-ms="8409">
+  <suite started-at="2025-08-26T02:46:45 CLT" name="Surefire suite" finished-at="2025-08-26T02:46:54 CLT" duration-ms="9479">
     <groups>
     </groups>
-    <test started-at="2025-08-25T22:22:45 CLT" name="Surefire test" finished-at="2025-08-25T22:22:54 CLT" duration-ms="8409">
+    <test started-at="2025-08-26T02:46:45 CLT" name="Surefire test" finished-at="2025-08-26T02:46:54 CLT" duration-ms="9479">
+      <class name="com.alex.tests.MySQLTest">
+        <test-method signature="testDBConnection()[pri:0, instance:com.alex.tests.MySQLTest@306e95ec]" started-at="2025-08-26T02:46:48 CLT" name="testDBConnection" finished-at="2025-08-26T02:46:49 CLT" duration-ms="569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDBConnection -->
+      </class> <!-- com.alex.tests.MySQLTest -->
       <class name="api.tests.UserApiTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:api.tests.UserApiTest@1af2d44a]" started-at="2025-08-25T22:22:45 CLT" name="setup" finished-at="2025-08-25T22:22:46 CLT" duration-ms="301" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.tests.UserApiTest@741a8937]" started-at="2025-08-26T02:46:45 CLT" name="setup" finished-at="2025-08-26T02:46:45 CLT" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getAllUsersTest()[pri:0, instance:api.tests.UserApiTest@1af2d44a]" started-at="2025-08-25T22:22:46 CLT" name="getAllUsersTest" finished-at="2025-08-25T22:22:48 CLT" duration-ms="2102" status="PASS">
+        <test-method signature="getAllUsersTest()[pri:0, instance:api.tests.UserApiTest@741a8937]" started-at="2025-08-26T02:46:45 CLT" name="getAllUsersTest" finished-at="2025-08-26T02:46:48 CLT" duration-ms="2627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllUsersTest -->
-        <test-method signature="getUserByIdTest()[pri:0, instance:api.tests.UserApiTest@1af2d44a]" started-at="2025-08-25T22:22:48 CLT" name="getUserByIdTest" finished-at="2025-08-25T22:22:49 CLT" duration-ms="833" status="PASS">
+        <test-method signature="getUserByIdTest()[pri:0, instance:api.tests.UserApiTest@741a8937]" started-at="2025-08-26T02:46:48 CLT" name="getUserByIdTest" finished-at="2025-08-26T02:46:48 CLT" duration-ms="385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserByIdTest -->
       </class> <!-- api.tests.UserApiTest -->
       <class name="com.qa.automation.tests.GoogleSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.automation.tests.GoogleSearchTest@35beb15e]" started-at="2025-08-25T22:22:49 CLT" name="setUp" finished-at="2025-08-25T22:22:51 CLT" duration-ms="2280" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.automation.tests.GoogleSearchTest@fd46303]" started-at="2025-08-26T02:46:49 CLT" name="setUp" finished-at="2025-08-26T02:46:51 CLT" duration-ms="2072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="shouldSearchOnGoogleAndSeeTitle()[pri:0, instance:com.qa.automation.tests.GoogleSearchTest@35beb15e]" started-at="2025-08-25T22:22:51 CLT" name="shouldSearchOnGoogleAndSeeTitle" finished-at="2025-08-25T22:22:54 CLT" duration-ms="2652" status="PASS">
+        <test-method signature="shouldSearchOnGoogleAndSeeTitle()[pri:0, instance:com.qa.automation.tests.GoogleSearchTest@fd46303]" started-at="2025-08-26T02:46:51 CLT" name="shouldSearchOnGoogleAndSeeTitle" finished-at="2025-08-26T02:46:54 CLT" duration-ms="3132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldSearchOnGoogleAndSeeTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.automation.tests.GoogleSearchTest@35beb15e]" started-at="2025-08-25T22:22:54 CLT" name="tearDown" finished-at="2025-08-25T22:22:54 CLT" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.automation.tests.GoogleSearchTest@fd46303]" started-at="2025-08-26T02:46:54 CLT" name="tearDown" finished-at="2025-08-26T02:46:54 CLT" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,6 +1,9 @@
+com\alex\core\DBConnection.class
 api\tests\UserApiTest.class
 api\tests\BaseApiTest.class
+com\alex\tests\MySQLTest.class
 com\qa\automation\tests\GoogleSearchTest.class
 com\qa\automation\core\DriverFactory.class
 com\qa\automation\pages\GoogleHomePage.class
 api\pages\UserApi.class
+com\alex\core\ConfigReader.class
