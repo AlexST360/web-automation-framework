@@ -48,3 +48,8 @@ TestNG para reportes claros de pruebas.
 Notas
 Este proyecto se puede expandir para incluir pruebas de APIs REST/SOAP y validaciones SQL.
 Todos los tests están pensados para ser ejecutados en pipelines CI/CD sin intervención manual.
+# Trigger de prueba para GitHub Actions
+# Trigger de prueba para GitHub Actions
+# Trigger de prueba para GitHub Actions
+# Trigger de prueba para GitHub Actions
+# Trigger de prueba para GitHub Actions
