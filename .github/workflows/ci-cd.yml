@@ -11,6 +11,7 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+
     steps:
       # 1️⃣ Checkout del repo
       - name: Checkout repository
@@ -29,11 +30,11 @@ jobs:
 
       # 4️⃣ Instalar ChromeDriver
       - name: Set up ChromeDriver
-        uses: actions/setup-chromedriver@v1
+        uses: nanasess/setup-chromedriver@v2
         with:
           version: latest
 
-      # 5️⃣ Cache Maven
+      # 5️⃣ Cache Maven para acelerar builds
       - name: Cache Maven packages
         uses: actions/cache@v3
         with:
@@ -43,13 +44,13 @@ jobs:
             ${{ runner.os }}-maven-
 
       # 6️⃣ Build Maven y correr tests
-      - name: Build with Maven
+      - name: Build and run Maven tests
         run: mvn clean install
 
       # 7️⃣ Build Docker
       - name: Build Docker image
         run: docker build -t qa-automation .
 
-      # 8️⃣ Run tests in Docker
+      # 8️⃣ Ejecutar tests dentro de Docker
       - name: Run tests inside Docker
         run: docker run --rm qa-automation
