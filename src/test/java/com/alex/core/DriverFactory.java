@@ -24,6 +24,13 @@ public class DriverFactory {
                 WebDriverManager.chromedriver().setup();
 
                 ChromeOptions options = new ChromeOptions();
+                // Para Docker / headless
+                options.addArguments("--headless"); // sin interfaz gráfica
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--remote-allow-origins=*");
+
+                // Mantener opciones de tu código original
                 options.addArguments("--start-maximized");
                 options.addArguments("--disable-notifications");
                 options.addArguments("--incognito");

@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  selenium:
+    image: selenium/standalone-chrome:latest
+    container_name: selenium-chrome
+    shm_size: "2g"  # evita errores de /dev/shm
+    ports:
+      - "4444:4444"   # Grid
+      - "7900:7900"   # noVNC (ver el navegador en el browser)
+    healthcheck:
+      test: [ "CMD", "/opt/bin/check-grid.sh" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  tests:
+    build: .
+    container_name: qa-automation-tests
+    depends_on:
+      selenium:
+        condition: service_healthy
+    environment:
+      # URL interna dentro de la red de docker-compose
+      SELENIUM_REMOTE_URL: "http://selenium:4444/wd/hub"
+    # Excluye temporalmente el test de MySQL si no tienes DB corriendo:
+    command: mvn -B -Dtest=\!MySQLTest test
+    # Si tienes más tests de DB, puedes excluir por patrón:
+    # command: mvn -B -Dtest=\!*DB* test
